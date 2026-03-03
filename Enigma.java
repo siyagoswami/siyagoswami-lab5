@@ -18,15 +18,43 @@ public class Enigma{
         
     }
 
+    public String decrypt(String message){    
+        String result = ""; 
 
-    public String decrypt(String message){        
-        //TODO
+        // find the index of the encrypted character in the outer rotor 
+
+        // take the character of that index in the middle rotor 
+
+        // find the index of that character in the outer rotor 
+
+        // take that character at the index in the inner rotor 
+
+        return result; 
     }
 
-
-    
     public String encrypt(String message){
-        //TODO
+        String result = ""; 
+        for(int i = 0; i < message.length(); i++) {
+            char ch = message.charAt(i); 
+
+            // find the index of the input character in the inner rotor 
+            int idxOuter = rotors[0].indexOf(ch); 
+            
+            // take the character at the same index in the outer rotor
+            char charOuter = rotors[2].charAt(idxOuter); 
+
+            // find the index of that character in the middle rotor 
+            int idxMiddle = rotors[1].indexOf(charOuter); 
+
+            // take that character at the same index in the outer rotor 
+            char finalChar = rotors[2].charAt(idxMiddle); 
+
+            result = result + finalChar; 
+
+            rotate(); 
+        }
+
+        return result; 
     }
 
     

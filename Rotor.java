@@ -1,5 +1,5 @@
 public class Rotor {
-
+  
     private String rotorValues;
     private char startChar;
         

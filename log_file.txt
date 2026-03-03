@@ -1,0 +1,35 @@
+commit e101bb41b1a640455aa14d14683bc18d895e06fe
+Author: siyagoswami <siya.goswami7@gmail.com>
+Date:   Tue Mar 3 14:58:15 2026 -0500
+
+    added decrypt() method to Enigma class
+
+commit c95d3ad3da13a3f9e109df6f0fa748be029688d3
+Author: siyagoswami <siya.goswami7@gmail.com>
+Date:   Tue Mar 3 14:39:21 2026 -0500
+
+    added encrypt() method to Enigma class
+
+commit c9c274b30b3bff6c910b11afa5eb3b7181ba12c1
+Author: siyagoswami <siya.goswami7@gmail.com>
+Date:   Tue Mar 3 14:37:00 2026 -0500
+
+    added encrypt() method to Enigma class
+
+commit dff8a57ec1f35e7a72049a993eb47669a3bddb3b
+Author: siyagoswami <siya.goswami7@gmail.com>
+Date:   Tue Mar 3 14:18:18 2026 -0500
+
+    implemented the indexOf() and charAt() methods in the Rotor class
+
+commit 0f2c902dc31948b82f65db91f4797429c4319fd1
+Author: siyagoswami <siya.goswami7@gmail.com>
+Date:   Tue Mar 3 14:05:30 2026 -0500
+
+    implemented the rotate() method in the Rotor class
+
+commit 364b8d414e10cfb9ee5d7ecebb9aa2dcc266e2b0
+Author: siyagoswami <59515694+siyagoswami@users.noreply.github.com>
+Date:   Tue Mar 3 13:30:27 2026 -0500
+
+    Add files via upload

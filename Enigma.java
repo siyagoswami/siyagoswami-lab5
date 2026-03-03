@@ -20,14 +20,24 @@ public class Enigma{
 
     public String decrypt(String message){    
         String result = ""; 
+        for(int i = 0; i < message.length(); i++) {
+            char ch = message.charAt(i); 
+             // find the index of the encrypted character in the outer rotor 
+             int idxEncrypted = rotors[2].indexOf(ch); 
 
-        // find the index of the encrypted character in the outer rotor 
+            // take the character of that index in the middle rotor 
+            char charMiddle = rotors[1].charAt(idxEncrypted);
 
-        // take the character of that index in the middle rotor 
+            // find the index of that character in the outer rotor 
+            int idxOuter = rotors[2].indexOf(charMiddle);
 
-        // find the index of that character in the outer rotor 
+            // take that character at the index in the inner rotor 
+            char finalChar = rotors[0].charAt(idxOuter);
 
-        // take that character at the index in the inner rotor 
+            result = result + finalChar; 
+            
+            rotate(); 
+        }
 
         return result; 
     }
@@ -57,7 +67,6 @@ public class Enigma{
         return result; 
     }
 
-    
     private void rotate(){
         if(rotors[0].rotate()){
             if(rotors[1].rotate()){

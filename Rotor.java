@@ -28,10 +28,12 @@ public class Rotor {
     
 
     public int indexOf(char c){
-        //TODO
+        // calls in-built String method indexOf to find index of desired character
+        return rotorValues.indexOf(c); 
     }
 
     public char charAt(int idx){
-        //TODO
+        // calls in-built String method charAt to find character at desired index 
+        return rotorValues.charAt(idx); 
     }
 }

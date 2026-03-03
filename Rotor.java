@@ -10,8 +10,7 @@ public class Rotor {
         // rotate until the desired starting character is at the top (or index = 0)
         while(this.rotorValues.charAt(0) != c) {
             this.rotate(); 
-        }
-            
+        }    
     }
     
     public boolean rotate(){
